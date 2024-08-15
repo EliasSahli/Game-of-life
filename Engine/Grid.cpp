@@ -26,6 +26,17 @@ void Grid::Spawn(std::mt19937& rng)
 			grid[i][j] = dist(rng);
 		}
 	}
+}
 
-	
+void Grid::SpawnSpecific()
+{
+	grid[40][30] = 1;
+	grid[39][30] = 1;
+	grid[40][29] = 1;
+	grid[40][31] = 1;
+	grid[41][31] = 1;
+}
+
+void Grid::CheckNeighbours()
+{
 }

@@ -8,7 +8,8 @@ Game::Game( MainWindow& wnd )
 	gfx( wnd ),
 	rng(std::random_device()())
 {
-	grid.Spawn(rng);
+	//grid.Spawn(rng);
+	grid.SpawnSpecific();
 }
 
 void Game::Go()
@@ -21,6 +22,7 @@ void Game::Go()
 
 void Game::UpdateModel()
 {
+	grid.CheckNeighbours();
 }
 
 void Game::ComposeFrame()
