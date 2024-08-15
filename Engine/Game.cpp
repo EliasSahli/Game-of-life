@@ -8,8 +8,8 @@ Game::Game( MainWindow& wnd )
 	gfx( wnd ),
 	rng(std::random_device()())
 {
-	//grid.Spawn(rng);
-	grid.SpawnSpecific();
+	grid.Spawn(rng);
+	//grid.SpawnSpecific();
 }
 
 void Game::Go()
@@ -48,4 +48,8 @@ void Game::UpdateModel()
 void Game::ComposeFrame()
 {
 	grid.Draw(gfx);
+	if (drawLines)
+	{
+		bd.Draw(gfx);
+	}
 }
