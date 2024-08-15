@@ -1,7 +1,7 @@
 #include "Grid.h"
 #include <random>
 
-void Grid::Draw(Graphics& gfx)
+void Grid::Draw(Graphics& gfx) const
 {
 	for (int i = 0; i < columns; i++)
 	{
@@ -27,6 +27,3 @@ void Grid::Spawn(std::mt19937& rng)
 		}
 	}
 }
-
-
-

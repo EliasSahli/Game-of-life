@@ -7,7 +7,7 @@
 class Grid
 {
 public:
-	void Draw(Graphics& gfx);
+	void Draw(Graphics& gfx) const;
 	void Spawn(std::mt19937& rng);
 
 private:
