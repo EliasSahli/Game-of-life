@@ -6,6 +6,7 @@
 #include "Graphics.h"
 #include "Grid.h"
 #include <random>
+#include "FrameTimer.h"
 
 class Game
 {
@@ -23,6 +24,9 @@ private:
 	Graphics gfx;
 
 	std::mt19937 rng;
-
+	FrameTimer ft;
 	Grid grid;
+
+	float stepCounter = 0.0f;
+	float updatePeriod = 0.004f;
 };

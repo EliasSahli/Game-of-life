@@ -30,6 +30,14 @@ void Grid::Spawn(std::mt19937& rng)
 
 void Grid::SpawnSpecific()
 {
+	for (int i = 0; i < columns; i++)
+	{
+		for (int j = 0; j < rows; j++)
+		{
+			grid[i][j] = 0;
+		}
+	}
+
 	grid[40][30] = 1;
 	grid[39][30] = 1;
 	grid[40][29] = 1;
