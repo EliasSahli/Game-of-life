@@ -10,7 +10,10 @@ public:
 	void Draw(Graphics& gfx) const;
 	void Spawn(std::mt19937& rng);
 	void SpawnSpecific();
-	void CheckNeighbours();
+	void CheckNeighbors();
+
+	//int GetColums() const;
+	//int GetRows() const;
 
 private:
 	static constexpr int resolution = 10;
@@ -20,5 +23,5 @@ private:
 	static constexpr int rows = Graphics::ScreenHeight / resolution;
 
 	int grid[columns][rows];
-	int oldGrid[columns][rows];
+	int nextGrid[columns][rows];
 };
