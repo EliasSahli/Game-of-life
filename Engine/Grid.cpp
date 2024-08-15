@@ -99,8 +99,3 @@ void Grid::CheckNeighbors()
 		}
 	}
 }
-
-int Grid::GetResolution()const
-{
-	return resolution;
-}

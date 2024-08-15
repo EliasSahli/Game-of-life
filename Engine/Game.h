@@ -8,7 +8,6 @@
 #include <random>
 #include "FrameTimer.h"
 
-
 class Game
 {
 public:
