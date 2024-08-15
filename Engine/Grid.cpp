@@ -9,7 +9,7 @@ void Grid::Draw(Graphics& gfx) const
 		{
 			if (grid[i][j] == 1)
 			{
-				gfx.DrawRectDim(i * resolution, j * resolution, resolution, resolution, Colors::White);
+				gfx.DrawRectDim((i * resolution) + 1, (j * resolution) + 1, resolution - 1, resolution - 1, Colors::White);
 			}
 		}
 	}
