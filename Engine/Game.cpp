@@ -48,8 +48,5 @@ void Game::UpdateModel()
 void Game::ComposeFrame()
 {
 	grid.Draw(gfx);
-	if (drawLines)
-	{
-		bd.Draw(gfx);
-	}
+
 }

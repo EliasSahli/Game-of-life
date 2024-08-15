@@ -7,7 +7,7 @@
 #include "Grid.h"
 #include <random>
 #include "FrameTimer.h"
-#include "Board.h"
+
 
 class Game
 {
@@ -27,7 +27,6 @@ private:
 	std::mt19937 rng;
 	FrameTimer ft;
 	Grid grid;
-	Board bd;
 
 	float stepCounter = 0.0f;
 	float updatePeriod = 0.004f;
